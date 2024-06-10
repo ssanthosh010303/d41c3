@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <title>Data Table</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <style>
+    .balance-positive {
+      color: green;
+    }
+
+    .balance-negative {
+      color: red;
+    }
+  </style>
+</head>
+<body class="bg-body">
+  <main class="container">
+    <div class="border bg-light rounded my-3 p-2">
+      <div class="d-flex justify-content-center justify-content-sm-between flex-wrap mb-2">
+        <form class="d-flex mb-2 mb-sm-0" role="search">
+          <button class="btn btn-success me-2" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentcolor" class="bi bi-funnel-fill">
+              <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5z"/>
+            </svg>
+          </button>
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+        <a href="#" class="btn btn-primary" style="height: 40px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentcolor" class="bi bi-plus">
+            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+          </svg>
+          Add Customer
+        </a>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-light table-hover mb-0">
+          <thead>
+            <tr>
+              <th>
+                <input type="checkbox" class="form-check-input">
+              </th>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Description</th>
+              <th scope="col">Status</th>
+              <th scope="col">Rate</th>
+              <th scope="col">Balance</th>
+              <th scope="col">Deposit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <input type="checkbox" class="form-check-input">
+              </td>
+              <th scope="row">1</th>
+              <td>Mark Manson</td>
+              <td>Loves Programming and Electronics</td>
+              <td>
+                <span class="badge rounded-pill text-bg-primary">Available</span>
+              </td>
+              <td class="text-end">
+                $70.00
+                <br>
+                <small>CAD</small>
+              </td>
+              <td class="text-end">
+                <div class="balance-positive">$70.00</div>
+                <small>CAD</small>
+              </td>
+              <td class="text-end">
+                $70.00
+                <br>
+                <small>CAD</small>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="form-check-input">
+              </td>
+              <th scope="row">2</th>
+              <td>Masha Mola</td>
+              <td>Looking Like a Wow</td>
+              <td>
+                <span class="badge rounded-pill text-bg-success">Open</span>
+              </td>
+              <td class="text-end">
+                $85.00
+                <br>
+                <small>CAD</small>
+              </td>
+              <td class="text-end">
+                <div class="balance-positive">$85.00</div>
+                <small>CAD</small>
+              </td>
+              <td class="text-end">
+                $85.00
+                <br>
+                <small>CAD</small>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="form-check-input">
+              </td>
+              <th scope="row">3</th>
+              <td>John Doe</td>
+              <td>Enjoys Outdoor Activities</td>
+              <td>
+                <span class="badge rounded-pill text-bg-warning">Pending</span>
+              </td>
+              <td class="text-end">
+                $50.00
+                <br>
+                <small>CAD</small>
+              </td>
+              <td class="text-end">
+                <div class="balance-negative">-$50.00</div>
+                <small>CAD</small>
+              </td>
+              <td class="text-end">
+                $50.00
+                <br>
+                <small>CAD</small>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="form-check-input">
+              </td>
+              <th scope="row">4</th>
+              <td>Jane Smith</td>
+              <td>Professional Writer</td>
+              <td>
+                <span class="badge rounded-pill text-bg-danger">Closed</span>
+              </td>
+              <td class="text-end">
+                $120.00
+                <br>
+                <small>CAD</small>
+              </td>
+              <td class="text-end">
+                <div class="balance-positive">$120.00</div>
+                <small>CAD</small>
+              </td>
+              <td class="text-end">
+                $120.00
+                <br>
+                <small>CAD</small>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="form-check-input">
+              </td>
+              <th scope="row">5</th>
+              <td>Alex Johnson</td>
+              <td>Graphic Designer</td>
+              <td>
+                <span class="badge rounded-pill text-bg-primary">Available</span>
+              </td>
+              <td class="text-end">
+                $90.00
+                <br>
+                <small>CAD</small>
+              </td>
+              <td class="text-end">
+                <div class="balance-negative">-$90.00</div>
+                <small>CAD</small>
+              </td>
+              <td class="text-end">
+                $90.00
+                <br>
+                <small>CAD</small>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="form-check-input">
+              </td>
+              <th scope="row">6</th>
+              <td>Lisa Ray</td>
+              <td>Marketing Specialist</td>
+              <td>
+                <span class="badge rounded-pill text-bg-success">Open</span>
+              </td>
+              <td class="text-end">
+                $110.00
+                <br>
+                <small>CAD</small>
+              </td>
+              <td class="text-end">
+                <div class="balance-positive">$110.00</div>
+                <small>CAD</small>
+              </td>
+              <td class="text-end">
+                $110.00
+                <br>
+                <small>CAD</small>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="form-check-input">
+              </td>
+              <th scope="row">7</th>
+              <td>Chris Lee</td>
+              <td>Software Developer</td>
+              <td>
+                <span class="badge rounded-pill text-bg-primary">Available</span>
+              </td>
+              <td class="text-end">
+                $95.00
+                <br>
+                <small>CAD</small>
+              </td>
+              <td class="text-end">
+                <div class="balance-positive">$95.00</div>
+                <small>CAD</small>
+              </td>
+              <td class="text-end">
+                $95.00
+                <br>
+                <small>CAD</small>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="form-check-input">
+              </td>
+              <th scope="row">8</th>
+              <td>Emma Watson</td>
+              <td>Data Analyst</td>
+              <td>
+                <span class="badge rounded-pill text-bg-warning">Pending</span>
+              </td>
+              <td class="text-end">
+                $75.00
+                <br>
+                <small>CAD</small>
+              </td>
+              <td class="text-end">
+                <div class="balance-negative">-$75.00</div>
+                <small>CAD</small>
+              </td>
+              <td class="text-end">
+                $75.00
+                <br>
+                <small>CAD</small>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="form-check-input">
+              </td>
+              <th scope="row">9</th>
+              <td>David Brown</td>
+              <td>Product Manager</td>
+              <td>
+                <span class="badge rounded-pill text-bg-danger">Closed</span>
+              </td>
+              <td class="text-end">
+                $130.00
+                <br>
+                <small>CAD</small>
+              </td>
+              <td class="text-end">
+                <div class="balance-positive">$130.00</div>
+                <small>CAD</small>
+              </td>
+              <td class="text-end">
+                $130.00
+                <br>
+                <small>CAD</small>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="form-check-input">
+              </td>
+              <th scope="row">10</th>
+              <td>Olivia Johnson</td>
+              <td>Business Consultant</td>
+              <td>
+                <span class="badge rounded-pill text-bg-primary">Available</span>
+              </td>
+              <td class="text-end">
+                $105.00
+                <br>
+                <small>CAD</small>
+              </td>
+              <td class="text-end">
+                <div class="balance-positive">$105.00</div>
+                <small>CAD</small>
+              </td>
+              <td class="text-end">
+                $105.00
+                <br>
+                <small>CAD</small>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
